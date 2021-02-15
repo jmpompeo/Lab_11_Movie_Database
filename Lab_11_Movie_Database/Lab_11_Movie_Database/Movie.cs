@@ -31,6 +31,7 @@ namespace Lab_11_Movie_Database
                     Console.WriteLine(movie._title);
                 }
             }
+          
         }
         public void GetAnimated()
         {
@@ -66,22 +67,23 @@ namespace Lab_11_Movie_Database
                 {
                     Console.WriteLine(movie._title);
                 }
-            }
+            } 
         }
         private List<Movie> InitializeList()
         {
-            var list = new List<Movie>();
-
-            list.Add(new Movie("Spirited Away", "animated"));
-            list.Add(new Movie("Frozen", "animated"));
-            list.Add(new Movie("Rambo", "drama"));
-            list.Add(new Movie("Django Unchained", "drama"));
-            list.Add(new Movie("Texas Chainsaw Massacre", "horror"));
-            list.Add(new Movie("Saw", "horror"));
-            list.Add(new Movie("Star Wars", "sci-fi"));
-            list.Add(new Movie("Jurassic", "sci-fi"));
-            list.Add(new Movie("Annabelle", "horror"));
-            list.Add(new Movie("The Conjouring", "horror"));
+            var list = new List<Movie>
+            {
+                new Movie("Spirited Away", "animated"),
+                new Movie("Frozen", "animated"),
+                new Movie("Rambo", "drama"),
+                new Movie("Django Unchained", "drama"),
+                new Movie("Texas Chainsaw Massacre", "horror"),
+                new Movie("Saw", "horror"),
+                new Movie("Star Wars", "sci-fi"),
+                new Movie("Jurassic Park", "sci-fi"),
+                new Movie("Annabelle", "horror"),
+                new Movie("The Conjouring", "horror")
+            };
 
             return list;
         }
